@@ -1,6 +1,6 @@
-# Minimal React Boilerplate
+# CreMiRA -- *Cre*ate *Mi*nimal *R*eact *A*pp
 
-Quickly setting up small demo pages. No bleeding edge, no complex production sites.
+Quickly setting up small demo pages (that you may will *[kremieren](https://en.wiktionary.org/wiki/kremieren)* soon). No bleeding edge, no complex production sites.
 
 ## Set up
 
