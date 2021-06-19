@@ -4,10 +4,10 @@
   "description": "A minimal react boilerplate",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.config.js",
-    "build": "webpack"
+    "dev": "sed -i 's/output\\/bundle.min.js/bundle.js/' index.html && webpack-dev-server --config webpack.dev.config.js",
+    "build": "sed -i 's/bundle.js/output\\/bundle.min.js/' index.html && webpack"
   },
-  "author": "Parth Prajapati",
+  "author": "hh.lohmann, Parth Prajapati",
   "license": "ISC",
   "dependencies": {
     "react": "^16.2.0",
