@@ -23,6 +23,18 @@ This gives you a fresh project directory with Git version control for your data 
 
 
 
+## Develop project
+
+```
+
+npm run dev
+
+```
+
+> This should automatically open your browser with `http://localhost:9000`, if not, launch this address by hand.
+
+
+
 ## Build a Production Bundle
 
 ```
@@ -36,29 +48,3 @@ Bundle is built as "bundle.min.js" in directory "output" of "YOUR-PROJECT", "out
 You can test this bundle by opening `index.html` in a browser.
 
 
-## Development
-
-##### *Change scaffold*
-
-Initial scaffold serves testing a production bundle, so you have to do this little change
-
-```
-
-sed -i 's/output\/bundle.min.js/bundle.js/' index.html
-
-```
-
-
-> Be aware: not only kicking out "/output", but also ".min" -- minified versions would make your browser's developer tools less worthy.
-
-
-
-##### *Start dev server*
-
-```
-
-npm run dev
-
-```
-
-> This should automatically open your browser with `http://localhost:9000`, if not launch this address by hand.
