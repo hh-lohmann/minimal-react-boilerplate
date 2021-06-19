@@ -31,7 +31,7 @@ npm run dev
 
 ```
 
-> This should automatically open your browser with `http://localhost:9000`, if not, launch this address by hand.
+This should automatically open your browser with `http://localhost:9000`, if not, launch this address by hand.
 
 
 
