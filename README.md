@@ -11,15 +11,13 @@ NEW_PROJECT="YOUR-PROJECT"
 git clone --depth=1 https://github.com/hh-lohmann/minimal-react-boilerplate.git "$NEW_PROJECT"
 cd "$NEW_PROJECT"
 git remote remove origin
-npm i
-echo '/output' > .gitignore
-git add .
 git commit --amend -m 'Boilerplate from https://github.com/hh-lohmann/minimal-react-boilerplate' --author="$(git config user.name) <$(git config user.email)>" --date="$(date)"
+npm i
 
 ```
 (You can set `NEW_PROJECT="YOUR-PROJECT"` at command line and then copy the rest in one bunch from here and paste into your terminal, each command will find its line, the last one might need an explicit Return key press)
 
-This gives you a fresh project directory with Git version control for your data instead of that of the boilerplate, including the "node_modules" dir for some possible disaster recovery. Leave out the lines between "npm " and "git commit" if you don't want to track the state of the "node_modules" dir.
+This gives you a fresh project directory with Git version control for your data instead of that of the boilerplate. The "node_modules" dir created by `npm i` will not be tracked by Git due to .gitignore setting, so connecting "YOUR-PROJECT" to your own project specific remote instance will keep things small and focussed.
 
 
 
